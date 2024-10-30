@@ -7,7 +7,7 @@ import nemo.collections.asr as nemo_asr
 from omegaconf import OmegaConf
 from typing import List
 import triton_python_backend_utils as pb_utils
-from models.functions.diarize_audio import diarize_audio
+from functions.diarize_audio import diarize_audio
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO)

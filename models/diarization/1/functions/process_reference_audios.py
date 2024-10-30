@@ -1,5 +1,5 @@
-from models.functions.save_temp_audio import save_temp_audio
-from models.functions.convert_audio_to_mono_wav import convert_audio_to_mono_wav
+from functions.save_temp_audio import save_temp_audio
+from functions.convert_audio_to_mono_wav import convert_audio_to_mono_wav
 import logging
 # Initialize logging
 logging.basicConfig(level=logging.INFO)
