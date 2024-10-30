@@ -96,6 +96,7 @@ class TritonPythonModel:
             # Perform diarization
             try:
                 rttm_content = diarize_audio(
+                    data_dir=self.data_dir,
                     file_bytes=file_bytes,
                     reference_audios=reference_audios,
                     labels=labels,

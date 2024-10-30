@@ -8,7 +8,7 @@ from functions.save_temp_audio import save_temp_audio
 from functions.process_reference_audios import process_reference_audios
 
 
-def diarize_audio(file_bytes, reference_audios, labels, num_speakers, verify_speaker_model, config):
+def diarize_audio(data_dir, file_bytes, reference_audios, labels, num_speakers, verify_speaker_model, config):
 
     if not file_bytes:
         raise Exception("Main audio file is missing.")
@@ -53,4 +53,4 @@ def diarize_audio(file_bytes, reference_audios, labels, num_speakers, verify_spe
 
     finally:
         # Clean up temporary files
-        cleanup_temp_files(temp_files)
+        cleanup_temp_files(data_dir, temp_files)
