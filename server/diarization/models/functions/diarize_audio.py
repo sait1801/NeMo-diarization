@@ -34,10 +34,10 @@ def diarize_audio(file_bytes, reference_audios, labels, num_speakers, verify_spe
         # Perform diarization
         rttm_content = process_audio(
             file_path=temp_main_file_path,
-            reference_audio_paths_with_labels=reference_audio_paths_with_labels,
+            # reference_audio_paths_with_labels=reference_audio_paths_with_labels,
             num_speakers=num_speakers,
             config=config,
-            verify_speaker_model=verify_speaker_model
+            # verify_speaker_model=verify_speaker_model
         )
 
         # Call verify_speakers to handle chunk verification

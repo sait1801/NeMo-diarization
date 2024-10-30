@@ -1,0 +1,33 @@
+name: "diarization"
+backend: "python"
+
+input [
+  {
+    name: "file"
+    data_type: TYPE_STRING
+    dims: [1]
+  },
+  {
+    name: "reference_audios"
+    data_type: TYPE_STRING
+    dims: [-1]
+  },
+  {
+    name: "labels"
+    data_type: TYPE_STRING
+    dims: [-1]
+  },
+  {
+    name: "num_speakers"
+    data_type: TYPE_INT32
+    dims: [1]
+  }
+]
+
+output [
+  {
+    name: "rttm_content"
+    data_type: TYPE_STRING
+    dims: [1]
+  }
+]
