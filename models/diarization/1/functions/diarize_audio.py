@@ -1,4 +1,3 @@
-import tempfile
 from pydub import AudioSegment
 from functions.convert_audio_to_mono_wav import convert_audio_to_mono_wav
 from functions.process_audio import process_audio

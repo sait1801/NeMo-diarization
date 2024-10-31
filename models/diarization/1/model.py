@@ -52,7 +52,6 @@ class TritonPythonModel:
 
         # Set clustering parameters
         self.config.diarizer.clustering.parameters.max_rp_threshold = 0.05
-        self.config.diarizer.clustering.parameters.max_num_speakers = 5
         self.config.num_workers = 0
 
         # Set output directory
